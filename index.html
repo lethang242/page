@@ -1,85 +1,89 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByTony Logo</title>
-    <!-- Nhúng Font Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: 'Montserrat', sans-serif;
-            overflow: hidden;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 
-        /* Khung chứa toàn bộ Logo */
-        .logo-wrapper {
-            display: inline-flex;
-            align-items: flex-end; /* Căn lề dưới cho ByT và onyx */
-            font-size: 130px;
-            font-weight: 900;
-            color: #000000;
-            line-height: 1; /* Loại bỏ khoảng trống dòng */
-            letter-spacing: -2px; /* Dấu gạch nối gần nhau hơn cho ByTony */
-        }
+<style>
 
-        /* Phần chữ "ByT" */
-        .prefix {
-            display: inline-block;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* Khung riêng cho chữ "ony" và phần chữ phía trên */
-        .ony-container {
-            display: inline-flex;
-            flex-direction: column;
-            position: relative;
-        }
+body{
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
 
-        /* Chữ "ony" lớn chính */
-        .ony-main-text {
-            display: inline-block;
-        }
+.logo{
+    display:flex;
+    align-items:flex-end;
+    font-family:'Montserrat',sans-serif;
+    font-weight:900;
+    font-size:130px;
+    line-height:1;
+    color:#000;
+    letter-spacing:-3px;
+}
 
-        /* Dải chữ nhỏ phía trên: Tự động căn lề trên "ony" */
-        .sub-text-layer {
-            display: flex;
-            justify-content: space-between; /* Giản cách đều giữa các chữ */
-            font-size: 14px; /* Kích thước chữ nhỏ phù hợp */
-            font-weight: 500; /* Độ đậm vừa phải */
-            color: #000000;
-            letter-spacing: 0; /* Giữ giản cách chữ mặc định */
-            width: 100%; /* Chiều rộng bằng chiều rộng "ony" */
-            position: absolute;
-            top: -20px; /* Di chuyển dải chữ nhỏ lên phía trên "ony" */
-            left: 0;
-            line-height: normal; /* Đảm bảo chiều cao dòng tiêu chuẩn cho dải chữ nhỏ */
-        }
-    </style>
+.prefix{
+    line-height:1;
+}
+
+.ony{
+    position:relative;
+    line-height:1;
+}
+
+.tagline{
+    position:absolute;
+
+    /* nằm trên chữ ony */
+    left:50%;
+    transform:translateX(-50%);
+
+    /* chỉnh lên xuống ở đây */
+    top:-26px;
+
+    width:max-content;
+
+    font-family:"Times New Roman",serif;
+    font-size:18px;
+    font-weight:400;
+    letter-spacing:0;
+
+    white-space:nowrap;
+    line-height:1;
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <div class="logo-wrapper">
-        <span class="prefix">ByT</span>
-        <div class="ony-container">
-            <div class="sub-text-layer">
-                <span>Experience</span>
-                <span>From</span>
-                <span>Tony</span>
-            </div>
-            <span class="ony-main-text">ony</span>
+<div class="logo">
+
+    <div class="prefix">ByT</div>
+
+    <div class="ony">
+
+        <div class="tagline">
+            Experience From Tony
         </div>
+
+        ony
+
     </div>
+
+</div>
 
 </body>
 </html>
