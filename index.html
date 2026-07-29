@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByTony Logo</title>
-    <!-- Nhúng Font Montserrat (Thay thế Futura) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByTony Logo</title>
+  <!-- Nhúng Font Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
+    body {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+    }
 
-        /* Khung chứa Logo */
-        .logo-container {
-            display: inline-flex;
-            align-items: flex-end;
-            position: relative;
-            user-select: none;
-        }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
 
-        /* Cụm chữ "By" */
-        .brand-by {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 150px;
-            font-weight: 800;
-            color: #000000;
-            letter-spacing: -6px;
-            line-height: 0.8;
-        }
+    /* Các chữ nhỏ phía trên */
+    .sub-text {
+      display: flex;
+      gap: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #333333;
+      letter-spacing: 1px;
+    }
 
-        /* Cụm chữ "Tony" */
-        .brand-tony {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 150px;
-            font-weight: 800;
-            color: #000000;
-            letter-spacing: -5px;
-            line-height: 0.8;
-            position: relative;
-        }
-
-        /* Dòng phụ: "Experience From Tony" */
-        .sub-text {
-            position: absolute;
-            top: -14px; /* Đặt mép dưới chạm thẳng thanh gạch ngang chữ T */
-            left: 106px; /* Căn lùi vào vừa đúng điểm bắt đầu của chữ 'o' */
-            right: 0; /* Kéo dài vừa khít đuôi chữ 'y' */
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 19.5px;
-            font-weight: normal;
-            color: #222222;
-            white-space: nowrap;
-            text-align: justify; /* Căn đều 2 đầu để vừa khít chiều rộng của "ony" */
-            text-align-last: justify;
-        }
-    </style>
+    /* Chữ ByTony lớn chính */
+    .main-logo {
+      font-size: 120px;
+      font-weight: 900;
+      color: #000000;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="logo-container">
-        <span class="brand-by">By</span>
-        <div class="brand-tony">
-            <div class="sub-text">Experience From Tony</div>
-            Tony
-        </div>
+  <div class="container">
+    <div class="sub-text">
+      <span>Experience</span>
+      <span>From</span>
+      <span>Tony</span>
     </div>
+    <div class="main-logo">ByTony</div>
+  </div>
 
 </body>
 </html>
