@@ -6,7 +6,10 @@
 
 <title>ByTony Logo</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -22,50 +25,62 @@ body{
 }
 
 .logo{
-    position:relative;
-    display:inline-block;
-
+    display:flex;
+    align-items:flex-end;
     transform:translateY(-80px);
 }
 
-/* Logo chính */
-.logo-text{
+/* By */
+.by{
     font-family:'Inter',sans-serif;
     font-weight:700;
-
     font-size:190px;
-    color:#000;
-
     line-height:.82;
     letter-spacing:-7px;
-
+    color:#000;
     transform:scaleX(.97);
-    transform-origin:left center;
-
     -webkit-text-stroke:.4px #000;
 }
+
+/* Tony */
+.tony{
+    position:relative;
+    display:inline-block;
+
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:190px;
+    line-height:.82;
+    letter-spacing:-7px;
+    color:#000;
+    transform:scaleX(.97);
+    -webkit-text-stroke:.4px #000;
+
+    margin-left:-8px;
+}
+
 /* Experience From Tony */
 .tagline{
     position:absolute;
 
-    left:340px;
-    top:4px;
+    left:0;
+    right:0;
 
-    width:255px;
+    top:8px;
 
     text-align:center;
 
-    font-family:"Times New Roman", serif;
+    font-family:"Times New Roman",serif;
     font-size:30px;
     font-weight:400;
 
-    line-height:1;
-    white-space:nowrap;
-
     color:#666666;
 
+    white-space:nowrap;
+    line-height:1;
     letter-spacing:-0.2px;
 }
+
 </style>
 </head>
 
@@ -73,9 +88,17 @@ body{
 
 <div class="logo">
 
-    <div class="logo-text">ByTony</div>
+    <span class="by">By</span>
 
-    <div class="tagline">Experience From Tony</div>
+    <span class="tony">
+
+        <span class="tagline">
+            Experience From Tony
+        </span>
+
+        Tony
+
+    </span>
 
 </div>
 
